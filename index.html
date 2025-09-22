@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>rodd's place for things and stuff</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/happy-markers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Schoolbell', sans-serif;
+      background-image: url(Downloads/HTML\ DOT.webp);
+      background-size: 30px;
+    }
+
+    .options a {
+      color: #22232e;
+      background: transparent;
+      text-decoration: none;
+      transition: font-size 0.4s ease;
+      margin-left: 25px;
+      margin-right: 10px;
+    }
+
+    .options a:hover {
+      font-size: 17px;
+      color: #8a8a8a;
+    }
+
+    .banner {
+      background-color: #e4f0ff;
+      color: #2f303e;
+      font-family: 'Comic Relief', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .bannertitle {
+        display: flex;
+        align-items: center;  
+        gap: 15px;
+                   
+    }
+    .bannertitle h2{
+        font-family: 'Happy Markers', sans-serif;
+        margin: 0;
+    }
+
+    .bannershadow {
+      background-color: #7d838c;
+      padding: 15px;
+      margin: auto;
+      border: none;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ===== bottom part ===== */
+    .content {
+      display: grid;
+      gap: 20px;
+      width: 1200px;
+      margin: 40px auto;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 200px;
+      grid-auto-flow: dense;
+    }
+
+    .aboutme {
+      text-align: center;
+      padding: 40px 0;
+      background-color: aliceblue;
+      border-radius: 10px;
+      box-shadow: 0 3px 9px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      grid-column: 1 / 4;
+      grid-row: 1;
+    }
+    
+
+    .aboutme a {
+      color: #22232e;
+      text-decoration: none;
+    }
+
+    .aboutme:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    }
+
+    .card {
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.8);
+    }
+
+    .card img {
+      max-width: 60%;
+      max-height: 70%;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+    }
+
+    .card.starwars {
+      grid-column: 1;
+      grid-row: 2;
+    }
+
+    .card.info {
+      background-color: aliceblue;
+      grid-column: 2 / 4;
+      grid-row: 2;
+    }
+
+    .card.eva {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .card.btd6 {
+      grid-column: 2;
+      grid-row: 3 / 5;
+    }
+
+    .card.roblox {
+      grid-column: 3;
+      grid-row: 3 / 5;
+    }
+
+    .card.minecraft {
+      grid-column: 1;
+      grid-row: 4;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="bannertitle">
+    <img src="Fishing_Rod_JE2_BE2.webp" alt="rod" width="100">
+    <h2>RODD'S INTERESTS ON THINGS AND STUFF</h2>
+    </div>
+
+      <div class="options">
+      <b>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="ref.html">References</a>
+        <a href="starwars.html">Star Wars</a>
+        <a href="eva.html">Evangelion</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="btd6.html">BTD6</a>
+        <a href="roblox.html">Roblox</a>
+      </b>
+    </div>
+  </div>
+  <hr class="bannershadow">
+
+
+  <div class="content">
+
+    <div class="aboutme">
+      <a href="about.html">
+        <h1>About me, myself, and I</h1>
+      </a>
+    </div>
+
+    
+    <div class="card starwars"
+      style="background-image: url(space.jpg);">
+    <a href="starwars.html">
+      <img src="starwars.png" alt="Star Wars">
+    </a>
+    </div>
+    
+
+    <div class="card eva" style="background-image: url(ramiel.jpg);">
+    <a href="eva.html">
+      <img src="Evangelion-logo.webp" alt="Evangelion">
+    </a>
+    </div>
+
+    <div class="card roblox" style="background-image: url(roblox-1024x576.jpeg.webp);">
+    <a href="roblox.html">
+      <img src="Roblox_logo_white.svg" alt="Roblox">
+    </a>
+    </div>
+
+    <div class="card btd6" style="background-image: url(MonkeyMeadow_No_UI.webp);">
+    <a href="btd6.html">
+      <img src="BTD6Logo.webp" alt="Bloons">
+    </a>
+    </div>
+
+    <div class="card minecraft" style="background-image: url(mcsunset.png);">
+    <a href="minecraft.html">
+      <img src="Minecraft-Logo-2011.png" alt="Minecraft">
+    </a>
+    </div>
+    
+    <div class="card info">
+      <h3>These are things that I find fun and interesting. Click on the logo of the tabs here or use the navigation bar to explore more!</h3>
+    </div>
+
+
+  </div>
+</body>
+</html>

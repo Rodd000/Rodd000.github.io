@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>rodd's minecraft stuff</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/happy-markers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/minecraft-2" rel="stylesheet">
+
+  <style>
+
+
+    body {
+      font-family: 'Minecraft', sans-serif;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      font-family: 'Schoolbell', sans-serif;
+      background-image: url(stonetexture.webp);
+      background-size: 50px;
+      line-height: 30px;
+    }
+
+    .options a {
+      color: #141b15;
+      background: transparent;
+      text-decoration: none;
+      transition: font-size 0.4s ease;
+      margin-left: 25px;
+      margin-right: 10px;
+    }
+
+    .options a:hover {
+      font-size: 17px;
+      color: #fde232;
+    }
+
+    .banner {
+      background-color: #1c8b17;
+      color: #141b15;
+      font-family: 'Comic Relief', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .bannertitle {
+        display: flex;
+        align-items: center;  
+        gap: 15px;
+                   
+    }
+    .bannertitle h2{
+        font-family: 'Happy Markers', sans-serif;
+        margin: 0;
+    }
+
+    .bannershadow {
+      background-color: #05390c;
+      padding: 15px;
+      margin: auto;
+      border: none;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .content {
+      display: grid;
+      gap: 20px;
+      width: 1200px;
+      margin: 40px auto;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 200px;
+      grid-auto-flow: dense;
+      font-family: 'Telegraf', sans-serif;
+    }
+
+    .intro {
+      font-family: 'Minecraft', sans-serif;
+      text-align: center;
+      background-color: #25711a;
+      border-radius: 10px;
+      box-shadow: 0 3px 9px rgba(0,0,0,0.3);
+      padding: 40px 0;
+      grid-column: 1 / 4;
+      grid-row: 1;
+    }
+
+    .intro h3{
+      margin-left: 75px;
+      margin-right: 75px;
+    }
+    
+    .card {
+      font-family: 'Minecraft', sans-serif;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card.thing1 {
+      grid-column: 1;
+      grid-row: 2;
+      transition: opacity 0.3s ease, transform 0.3 ease;
+    }
+
+    .card.thing2 {
+      background-color: aliceblue;
+      grid-column: 2;
+      grid-row: 2;
+      transition: opacity 0.3s ease, transform 0.3 ease;
+    }
+
+    .card.thing3 {
+      grid-column: 3;
+      grid-row: 2;
+      transition: opacity 0.3s ease, transform 0.3 ease;
+    }
+
+  .card.thing1:hover ~ .thing1info, .card.thing2:hover ~ .thing2info, .card.thing3:hover ~ .thing3info {
+    opacity: 1;
+  }
+
+  .card.thing1:hover, .card.thing2:hover, .card.thing3:hover {
+    transform: scale(1.06);
+  }
+
+
+
+  .card.thing1info {
+    background-color: rgb(68, 102, 53);
+    grid-column: 1;
+    grid-row: 3 / 5;
+  }
+
+  .card.thing2info {
+    background-color: rgb(68, 102, 53);
+    grid-column: 2;
+    grid-row: 3 / 5;
+  }
+
+    .card.thing3info {
+    background-color: rgb(68, 102, 53);
+    grid-column: 3;
+    grid-row: 3 / 5;
+  }
+
+    .card.thing1info, .card.thing2info, .card.thing3info {
+      opacity: 0.25;
+      transition: opacity 0.3s ease;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="bannertitle">
+    <img src="Fishing_Rod_JE2_BE2.webp" alt="rod" width="100">
+    <h2>RODD'S INTERESTS ON THINGS AND STUFF</h2>
+    </div>
+
+      <div class="options">
+      <b>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="ref.html">References</a>
+        <a href="starwars.html">Star Wars</a>
+        <a href="eva.html">Evangelion</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="btd6.html">BTD6</a>
+        <a href="roblox.html">Roblox</a>
+      </b>
+    </div>
+  </div>
+  <hr class="bannershadow">
+
+
+  <div class="content">
+
+    <div class="intro">
+        <h3>Blocks, blocks, blocks, and even more blocks. I love Minecraft like everyone. It's a really fun game with endless possibilities on what you could do.</h3>
+    </div>
+   
+
+      <div class="card thing1"
+        style="background-image: url(dirthouse.jpg);">
+      </div>
+
+      
+    <div class="card thing1info">
+      <p>I like building stuff in Minecraft. It's simple and quite complicated sometimes. You place blocks to make something that you could brag to your friends.</p>
+    </div>
+    
+
+    <div class="card thing2" style="background-image: url(multiplayer.jpg);">
+
+    </div>
+
+
+    <div class="card thing2info">
+      <p>Speaking of friends, why not play with them together? You could build, mine, venture as a team and everyones there for one another. Seriously, it's funny to play with friends because the things that you could do is so much more.</p>
+    </div>
+
+
+    <div class="card thing3" style="background-image: url(biomesthing.webp);">
+    </div>
+
+
+    <div class="card thing3info">
+      <p>The world is vast and there's tons and tons of places to explore. Caves, cliffs, rivers, valleys, and many more. Spawned on a biome where you don't like? No worries! Just walk 500 miles until you're satisfied with where you place your dirt mansion.</p>
+    </div>
+
+
+
+  </div>
+</body>
+</html>
