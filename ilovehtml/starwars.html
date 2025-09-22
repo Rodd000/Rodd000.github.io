@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>rodd's star wars stuff</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/happy-markers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+                
+
+  <style>
+    body {
+    margin: 0;
+      padding: 0;
+      font-family: 'Anonymous Pro', sans-serif;
+      background-color: #1a1a1a;
+      background-image: url(space.jpg);
+    }
+
+    .options a {
+      color: #fae268;
+      background: transparent;
+      text-decoration: none;
+      transition: font-size 0.4s ease;
+      margin-left: 25px;
+      margin-right: 10px;
+    }
+
+    .options a:hover {
+      font-size: 17px;
+      color: #7c7554;
+    }
+
+    .banner {
+      background-color: #161616;
+      color: #fae268;
+      font-family: 'Comic Relief', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .bannertitle {
+        display: flex;
+        align-items: center;  
+        gap: 15px;
+                   
+    }
+    .bannertitle h2{
+        font-family: 'Happy Markers', sans-serif;
+        margin: 0;
+    }
+
+    .bannershadow {
+      background-color: #1b1b1b;
+      padding: 15px;
+      margin: auto;
+      border: none;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .content {
+      display: grid;
+      row-gap: 45px;
+      column-gap: 15px;
+      width: 1200px;
+      margin: 40px auto;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 200px;
+      grid-auto-flow: dense;
+    }
+
+    .logo {
+      grid-column: 2 / 3;
+      grid-row: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .card {
+      color:#228599;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+      z-index: 0;
+    }
+
+    .card h3{
+      margin: 30px;
+    }
+
+    .logo img {
+        max-width: 175%;
+        max-height: 175%;
+        transition: transform 0.4s ease;
+    }
+
+    .card.sig:hover, .card.bg:hover, .card.lore:hover, .logo:hover img {
+      z-index: 2;
+      transform: scale(1.18);
+    }
+
+    .card.sig {
+      grid-column: 1;
+      grid-row: 2;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card.siginfo {
+      background-color: #000000;
+      grid-column: 2 / 4;
+      grid-row: 2;
+    }
+
+    .card.lore {
+      grid-column: 3;
+      grid-row: 3;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: changeBg 25s infinite;
+    }
+
+    @keyframes changeBg {
+    0% { background-image: url(anakin-skywalker-anakin.gif); }
+    25% { background-image: url(obimaul.gif); }
+    50% { background-image: url(rots-mace-windu.gif); }
+    75% { background-image: url(luke-skywalker-darth-vader.webp); }
+    100% { background-image: url(empire-strikes.gif); }
+  }
+
+    .card.loreinfo {
+      background-color: #000000;
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+
+    .card.bg {
+      grid-column: 1;
+      grid-row: 4;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card.bginfo {
+      background-color: #000000;
+      grid-column: 2 / 4;
+      grid-row: 4;
+    }
+
+    .card.sig:hover ~ .siginfo, .card.lore:hover ~ .loreinfo, .card.bg:hover ~ .bginfo {
+      opacity: 1;
+    }
+
+    .card.siginfo, .card.loreinfo, .card.bginfo {
+      position: relative;
+      z-index: 1; 
+      opacity: 0.1;
+      transition: opacity 0.4s ease;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="bannertitle">
+    <img src="Fishing_Rod_JE2_BE2.webp" alt="rod" width="100">
+    <h2>RODD'S INTERESTS ON THINGS AND STUFF</h2>
+    </div>
+
+      <div class="options">
+      <b>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="ref.html">References</a>
+        <a href="starwars.html">Star Wars</a>
+        <a href="eva.html">Evangelion</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="btd6.html">BTD6</a>
+        <a href="roblox.html">Roblox</a>
+      </b>
+    </div>
+  </div>
+  <hr class="bannershadow">
+
+
+  <div class="content">
+
+    <div class="logo">  
+        <img src="starwars.png" alt="star wars">
+    </div>
+
+    
+    <div class="card sig" style="background-image: url(Force-ghosts-Star-Wars.avif);">
+    </div>
+    <div class="card siginfo">
+    <h3>I love Star Wars ever since I was a little child. I was amazed with everything in it whether it was the setting, the story, or even the duels. This franchise will remain as the best thing that has happened to my life.</h3>
+    </div>
+    
+
+    <div class="card lore">
+    </div>
+    <div class="card loreinfo">
+    <h3>Star Wars is a sci-fi movie series about the battle between the Jedi and Sith. It follows the eventful rise, tragic fall, and the redemption of Anakin Skywalker. The franchise, at its core, is all about hope, family, and the struggle between good and evil.</h3>
+    </div>
+
+    
+    <div class="card bg" style="background-image: url(Luke-Skywalker-Tatooine-Binary-Sunset.avif);">
+    </div>
+    <div class="card bginfo">
+    <h3>A story by George Lucas that happened a long time ago in a galaxy far, far away where countless planets, species, and cultures exist. The galaxy is torn between the forces of democracy, like the Galactic Republic and later the Rebellion/Resistance. Within the mess is the Force, a mystical energy that binds all life, split between the light side and the dark side.</h3>
+    </div>
+
+  </div>
+</body>
+</html>
